@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    background-color:#e7e0cd;
+}
+
+header{
+  background-color: #668882;
+  color: #fff;
+}
+
+h1{ 
+  text-align: center;
+}
+header button{
+  width: 30px;
+  height: 30px;
+  float: inline-end;
+  margin: 4px;
+}
+
+#sidebar {
+  position: fixed;
+  max-width: 230px;
+  height: 100%;
+  background:#e7e0cd ;
+  left: 200px;
+  transition: all 500ms linear;
+  border-right: 2px solid grey;
+  margin: 2px;
+  padding: 2px;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li {
+  
+  background-color: #668882;
+  color:  white;
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 3px solid rgba(100, 100, 100, .3);
+  border-right: 3px solid rgba(100, 100, 100, .3);
+  border-radius: 9px;
+  text-align: center;
+  margin-top: 2px;
+}
+.logo {
+    width: 60%;
+  display: block;
+  margin: 0 auto; 
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+button{
+  border-radius: 5px;
+  width: 25%;
+  height: 200px;
+  cursor: pointer;
+  float: left;
+  margin-right: 3.3%;
+  }
+
+.opciones{
+    margin-left: 16%;  
+  }
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+header a button{
+
+  background:#c44a4a;
+  color: #eee;
+}
+/*--medidad de ipad--*/
+@media (min-width:768px) {
+  #sidebar {
+    
+    width: 100px;
+    height: 750px;
+  }
+  
+}
+
+/**medidad de iphone**/
+
+@media (min-width:375px){
+  #sidebar {
+    
+    width: 6rem;
+    height: 80%;
+    left: -200px;
+  }
+}
